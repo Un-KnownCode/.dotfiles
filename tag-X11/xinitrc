@@ -1,0 +1,29 @@
+# fcitx
+export INPUT_METHOD=fcitx5
+export GTK_IM_MODULE=fcitx5
+export QT_IM_MODULE=fcitx5
+export XMODIFIERS=\@im=fcitx5
+
+# picom
+picom -o 0.95 -i 0.88 --detect-rounded-corners --vsync --blur-background-fixed -f -D 5 -c -b
+
+# tim
+nohup /usr/lib/gsd-xsettings > /dev/null 2>&1 &
+
+# nitrogen
+nitrogen --restore
+
+# flameshot
+flameshot &
+
+# dwm
+exec dwm
+
+# dunst
+# dunst &
+
+# virtualbox
+# sudo modprobe vboxdrv
+
+# idea
+wmname LG3D
