@@ -1,2 +1,2 @@
-TAGS="rcm zsh ranger X11 Vim"
+TAGS="rcm zsh ranger X11 Vim st dwm"
 EXCLUDES="README.md"
