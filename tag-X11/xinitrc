@@ -16,14 +16,14 @@ nitrogen --restore
 # flameshot
 flameshot &
 
+# dunst
+dunst &
+
 # dwm
 exec dwm
 
 # mpd
 mpd &
-
-# dunst
-dunst &
 
 # ssh
 ssh-agent dwm
