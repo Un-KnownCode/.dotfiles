@@ -1686,7 +1686,7 @@ run(void)
 void
 runAutostart(void) {
 	system("cd ~/my.scripts; ./dwm.autostart.sh &");
-	system("Cd ~/dwm-bar; ./dwm_bar.sh &");
+	system("cd ~/dwm-bar; ./dwm_bar.sh &");
 }
 
 void
