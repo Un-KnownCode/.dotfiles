@@ -18,12 +18,12 @@
 # Exec = /usr/bin/pkill -RTMIN+8 dwmblocks # Or i3blocks if using i3.
 
 case $BLOCK_BUTTON in
-	1) setsid -f "$TERMINAL" -e popupgrade ;;
+	1) setsid -f alacritty -e sudo pacman -Syyu ;;
 	2) notify-send "$(/usr/bin/pacman -Qu)" ;;
 	3) notify-send "🎁 更新模块" "📦: 可升级的软件包数量
 - 左键点击升级软件包
 - 中键点击查看可更新的软件包" ;;
-	6) "$TERMINAL" -e "$EDITOR" "$0" ;;
+	6) alacritty -e nvim "$0" ;;
 esac
 
 pacman -Qu | grep -Fcv "[ignored]" | sed "s/^/📦/;s/^📦0$/已是最新/g"

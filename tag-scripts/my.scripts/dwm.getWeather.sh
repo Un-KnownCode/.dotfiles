@@ -17,14 +17,14 @@ showweather() { printf "%s" "$(sed '16q;d' "$weatherreport" |
 sed '13q;d' "$weatherreport" | grep -o "m\\([-+]\\)*[0-9]\\+" | sort -n -t 'm' -k 2n | sed -e 1b -e '$!d' | tr '\n|m' ' ' | awk '{print " 🥶" $1 "°","🌞" $2 "°"}' ;}
 
 case $BLOCK_BUTTON in
-	1) setsid -f "$TERMINAL" -e less -Srf "$weatherreport" ;;
+	1) setsid -f alacritty -e less -Srf "$weatherreport" ;;
 	2) getforecast && showweather && pkill -RTMIN+5 dwmblocks ;;
 	3) notify-send "🌈 天气预报模块" "\- 左键点击查看完整预测.
 - 中键点击更新天气预报.
 ☔: 百分之多少几率可能会下雨
 🥶: 当日最低温度
 🌞: 当日最高温度" ;;
-	6) "$TERMINAL" -e "$EDITOR" "$0" ;;
+	6) alacritty -e nvim "$0" ;;
 esac
 
 # The test if our forcecast is updated to the day. If it isn't download a new

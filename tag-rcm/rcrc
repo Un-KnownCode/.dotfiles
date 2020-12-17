@@ -1,2 +1,2 @@
-TAGS="rcm zsh ranger X11 Vim st dwm"
+TAGS="rcm zsh ranger X11 Vim st dwm scripts dwnblock"
 EXCLUDES="README.md"

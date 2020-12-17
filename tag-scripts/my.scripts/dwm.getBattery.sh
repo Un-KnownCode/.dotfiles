@@ -11,7 +11,7 @@ case $BLOCK_BUTTON in
 ❗: 电量低于20%警告!" ;;
 	#4) xbacklight -inc 10 ;;
 	#5) xbacklight -dec 10 ;;
-	6) "$TERMINAL" -e "$EDITOR" "$0" ;;
+	6) alacritty -e nvim "$0" ;;
 esac
 
 # Loop through all attached batteries.

@@ -12,13 +12,13 @@ case $BLOCK_BUTTON in
 - 🌖: Waning Gibbous
 - 🌗: Last Quarter
 - 🌘: Waning Crescent" ;;
-	6) "$TERMINAL" -e "$EDITOR" "$0" ;;
+	6) alacritty -e nvim "$0" ;;
 esac
 
 moonfile="${XDG_DATA_HOME:-$HOME/.local/share}/moonphase"
 
 [ "$(stat -c %y "$moonfile" 2>/dev/null | cut -d' ' -f1)" = "$(date '+%Y-%m-%d')" ] ||
-	{ curl -sf "wttr.in/?format=%m" > "$moonfile" || exit 1 ;}
+	{ curl -sf "wttr.in/Fogang" > "$moonfile" || exit 1 ;}
 
 icon="$(cat "$moonfile")"
 

@@ -4,14 +4,14 @@
 # Show 🌐 if connected to ethernet or ❎ if none.
 
 case $BLOCK_BUTTON in
-	1) "$TERMINAL" -e nmtui; pkill -RTMIN+4 dwmblocks ;;
+	1) alacritty -e nmtui; pkill -RTMIN+4 dwmblocks ;;
 	3) notify-send "🌐 网络模块" "\- 左键点击连接网络
 📡: 没有Wifi连接
 📶: Wifi已连接
 ❎: 没有以太网连接
 🌐: 以太网已连接
 " ;;
-	6) "$TERMINAL" -e "$EDITOR" "$0" ;;
+	6) alacritty -e nvim "$0" ;;
 esac
 
 GetIp(){

@@ -6,7 +6,7 @@ case $BLOCK_BUTTON in
 	3) notify-send "🖥 CPU模块" "\- 查看CPU温度.
 - 左键点击查看CPU占用率.
 - 中键点击打开htop." ;;
-	6) "$TERMINAL" -e "$EDITOR" "$0" ;;
+	6) alacritty -e nvim "$0" ;;
 esac
 
 sensors | awk '/Core 0/ {print "🌡" $3}'
