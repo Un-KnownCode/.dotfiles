@@ -1,5 +1,5 @@
 #!/bin/sh
 
 pkill -RTMIN+12 dwmblocks
-mbsync -a
+proxychains mw -y unknowncode0818@gmail.com
 pkill -RTMIN+12 dwmblocks

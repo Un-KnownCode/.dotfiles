@@ -13,5 +13,3 @@ fcitx5 &
 
 # albert
 albert &
-
-~/my.scripts/setWallpaper.sh &
