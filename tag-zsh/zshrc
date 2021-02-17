@@ -73,7 +73,6 @@ plugins=(
 	history
 	zsh-autosuggestions
 	zsh-syntax-highlighting
-	autojump
 	extract
 	)
 
@@ -112,3 +111,4 @@ alias btop="bpytop"
 alias prc="proxychains"
 alias idea="intellij-idea-ultimate-edition"
 alias mutt="neomutt"
+alias java="/opt/JAVA/java-se-8u41-ri/bin/java"
